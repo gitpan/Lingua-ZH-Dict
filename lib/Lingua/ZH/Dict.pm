@@ -1,7 +1,12 @@
 package Lingua::ZH::Dict;
-$Lingua::ZH::Dict::VERSION = '0.01';
 
 use strict;
+use warnings;
+
+require Exporter;
+our @ISA       = qw(Exporter);
+our $VERSION   = '0.02';
+
 use LWP::UserAgent;
 use HTML::LinkExtractor;
 
@@ -11,7 +16,7 @@ Lingua::ZH::Dict - Chinese Word MOE Dictionary Lookup
 
 =head1 VERSION
 
-This document describes version 0.01 of Lingua::ZH::Dict, released
+This document describes version 0.02 of Lingua::ZH::Dict, released
 July 25, 2004.
 
 =head1 SYNOPSIS

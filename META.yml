@@ -1,12 +1,14 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Lingua-ZH-Dict
-version:      0.01
-version_from: lib/Lingua/ZH/Dict.pm
-installdirs:  site
-requires:
-    LWP::UserAgent:             0
-    HTML::LinkExtractor:	0
-
+name: Lingua-ZH-Dict
+version: 0.02
+abstract: hinese Word Lookup Agent
+author: Cheng-Lung Sung <clsung@dragon2.net>
+license: perl
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.21
+requires:
+  perl: 5.6.1
+  LWP::UserAgent: 0
+  HTML::LinkExtractor: 0
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.36
